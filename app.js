@@ -14,13 +14,11 @@ const webhooks = new WebhooksApi({
 const app = express();
 
 webhooks.on('push', event => {
-  console.log(`friggin event: ${JSON.stringify(event)}`);
-  console.log('---');
-  console.log('ok, looking at event');
+  console.log(`event: ${JSON.stringify(event)}`);
   console.log(`ref = ${event.payload.ref}`)
   if(event.payload.ref === 'refs/heads/master'){
     console.log('There was a push to master.  Invoke our script...');
-    child_process.execFileSync(env.command, options = { stdio: 'inherit'});
+    child_process.execFileSync(env.command, { stdio: 'inherit'});
     console.log('All done (for now)...');
   }
 });
