@@ -3,17 +3,26 @@ Webhook deployment plumbing, the real dumb way.
 
 # config
 
-env.json
+Put `env.json` in this dir with contents like:
 
-* script to run
-* secret
+```
+{
+  "secret": "your_webhook_secret",
+  "command": "/path/to/a/script.sh"
+}
+```
 
 # run
 
 Run it like this:
 
 ```
-tbd
+$ node app.js
 ```
 
-Probably want supervisord?
+You probably want supervisord to restart this on crash,
+and you probably want supervisord to restart your other app
+so that it doesn't stay running in the fg in this app.
+
+Recommend that your command script just kills the old one at the end
+and lets supervisord restart (or similar).
