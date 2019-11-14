@@ -2,7 +2,7 @@
   "name": "roquet",
   "version": "1.0.0",
   "description": "Webhook deployment plumbing, the real dumb way.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/breedx2/roquet#readme",
   "dependencies": {
-    "@octokit/webhooks": "^6.3.2"
+    "@octokit/webhooks": "^6.3.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "smee-client": "^1.1.0"
   }
 }
