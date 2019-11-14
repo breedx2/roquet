@@ -1,0 +1,22 @@
+{
+  "name": "roquet",
+  "version": "1.0.0",
+  "description": "Webhook deployment plumbing, the real dumb way.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/breedx2/roquet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/breedx2/roquet/issues"
+  },
+  "homepage": "https://github.com/breedx2/roquet#readme",
+  "dependencies": {
+    "@octokit/webhooks": "^6.3.2"
+  }
+}
