@@ -12,6 +12,9 @@ Put `env.json` in this dir with contents like:
 }
 ```
 
+and make sure to register a github webook to point at
+your endpoint.  It runs on port 8666 and expects `/`.:
+
 # run
 
 Run it like this:
