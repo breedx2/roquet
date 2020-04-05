@@ -12,8 +12,20 @@ Put `env.json` in this dir with contents like:
 }
 ```
 
+or, if you'd like to support multiple repos with the same roquet instance:
+
+```
+{
+  "secret": "your_webhook_secret",
+  "repo-commands": {
+    "repo1": "/path/to/a/script.sh",
+    "otherrepo": "/path/to/different/script"
+  }
+}
+```
+
 and make sure to register a github webook to point at
-your endpoint.  It runs on port 8666 and expects `/`.:
+your endpoint.  It runs on port 9666 and expects `/`.:
 
 # run
 
