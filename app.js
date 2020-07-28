@@ -38,6 +38,10 @@ webhooks.on('push', event => {
 
 app.use(webhooks.middleware);
 
+app.get('/check', (req,res) => { 
+	res.send('ok');
+});
+
 app.listen(PORT, () =>
   console.log(`roquet listening on port ${PORT}`)
 );
