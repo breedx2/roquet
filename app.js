@@ -42,6 +42,7 @@ app.get('/check', (req,res) => {
 	res.send('ok');
 });
 
-app.listen(PORT, () =>
+const listenInterface = env.allInterfaces === true ? null : 'localhost';
+app.listen(PORT, listenInterface, () =>
   console.log(`roquet listening on port ${PORT}`)
 );
