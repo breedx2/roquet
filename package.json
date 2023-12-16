@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/breedx2/roquet#readme",
   "dependencies": {
-    "@octokit/webhooks": "^7.1.2",
+    "@octokit/webhooks": "^9.26.3",
     "express": "^4.17.3"
   },
   "devDependencies": {
